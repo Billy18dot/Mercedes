@@ -1,6 +1,16 @@
 services:
-  - type: web
-    name: Mercedes
-    env: docker
-    region: Frankfurt
-    plan: free
+- type: web
+  name: Xstro
+  runtime: docker
+  repo: https://github.com/Billy18dot/Mercedes
+  plan: free
+  envVars:
+  - key: PORT
+    sync: false
+  - key: SESSION_ID
+    sync: false
+  region: oregon
+  healthCheckPath: /
+  dockerContext: .
+  dockerfilePath: ./Dockerfile
+version: "1"
