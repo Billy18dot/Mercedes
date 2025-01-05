@@ -1,6 +1,6 @@
 services:
 - type: web
-  name: Xstro
+  name: Mercedes 
   runtime: docker
   repo: https://github.com/Billy18dot/Mercedes
   plan: free
@@ -9,7 +9,7 @@ services:
     sync: false
   - key: SESSION_ID
     sync: false
-  region: oregon
+  region: Frankfurt
   healthCheckPath: /
   dockerContext: .
   dockerfilePath: ./Dockerfile
