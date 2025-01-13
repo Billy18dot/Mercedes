@@ -2,7 +2,7 @@ services:
 - type: web
   name: Mercedes 
   runtime: docker
-  repo: https://github.com/betingrich3/Mercedes
+  repo: https://github.com/Billy18dot/Mercedes
   plan: free
   envVars:
   - key: PORT
